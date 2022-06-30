@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    counter-reset: section;
+}
+
+.flex-container {
+    display: flex;
+    height: 100px;
+    align-content: center;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+.button {
+
+    width: 100%;
+    background-color: #87CEEB, ;
+    color: rgb(253, 253, 253);
+    border-radius: 5px;
+    padding: 0px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 50px;
+    transition-duration: 0.5s;
+
+}
+
+.button:hover {
+    background-color: #016d04;
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+
+.game {
+    width: 100%;
+    height: 100vh;
+    border-bottom: 80px solid rgb(24, 174, 24);
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(#87CEEB, #0FF6FF);
+
+}
+
+
+.pipe-game {
+    position: absolute;
+    bottom: 0;
+    width: 50px;
+    animation: pipe-animation 5s infinite linear;
+}
+
+.super-mario {
+    width: 120px;
+    position: absolute;
+    bottom: 0;
+}
+
+.clouds-game {
+    position: absolute;
+    width: 500px;
+    animation: clouds-animation 15s infinite linear;
+}
+
+.jump-mario {
+    animation: mario-animation 500ms ease-out;
+}
+
+.koopa18 {
+    width: 80px;
+    position: absolute;
+    bottom: -3px;
+    animation: koopa18-animation 15s infinite linear;
+
+}
+
+.koopa15 {
+    width: 70px;
+    position: absolute;
+    bottom: 150px;
+    animation: koopa15-animation 12s infinite linear;
+}
+
+.pipe-flower {
+    width: 70px;
+    position: absolute;
+    bottom: -2px;
+    animation: pipe-flower-animation 8s infinite linear;
+
+}
+
+.pumpkin {
+    width: 40px;
+    position: absolute;
+    bottom: 0px;
+    animation: pumpkin-animation 10s infinite linear;
+}
+
+.ghost {
+    width: 90px;
+    position: absolute;
+    bottom: 300px;
+    animation-name: ghost-animation;
+    animation-duration: 15s;
+    transition-timing-function: cubic-bezier(1, -5, 0.735, 0.045);
+    animation-iteration-count: infinite;
+}
+
+.life {
+    width: 100px;
+    position: absolute;
+    bottom: 500px;
+    animation-name: life-animation;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    animation-fill-mode: both;
+}
+
+.turtle {
+    width: 130px;
+    position: absolute;
+    bottom: 400px;
+    animation: turtle-animation 30s infinite ease;
+
+
+
+}
+
+@keyframes pipe-animation {
+    from {
+        right: -80px;
+    }
+
+    to {
+        right: 100%;
+    }
+
+}
+
+@keyframes clouds-animation {
+    from {
+        right: -550px
+    }
+
+    to {
+        right: 100%
+    }
+
+}
+
+@keyframes mario-animation {
+    0% {
+        bottom: 0%;
+    }
+
+    30% {
+        bottom: 180px;
+    }
+
+    50% {
+        bottom: 200px;
+    }
+
+    70% {
+        bottom: 180px;
+    }
+
+    80% {
+        bottom: 180px;
+    }
+
+    100% {
+        bottom: 0%;
+    }
+
+}
+
+@keyframes koopa18-animation {
+    from {
+        right: -550px
+    }
+
+    to {
+        right: 100%
+    }
+
+}
+
+@keyframes koopa15-animation {
+    from {
+        right: -550px
+    }
+
+    to {
+        right: 100%
+    }
+
+}
+
+@keyframes pipe-flower-animation {
+    from {
+        right: -550px
+    }
+
+    to {
+        right: 100%
+    }
+
+}
+
+@keyframes pumpkin-animation {
+    from {
+        right: -550px
+    }
+
+    to {
+        right: 100%
+    }
+
+}
+
+@keyframes ghost-animation {
+    from {
+        right: -550px
+    }
+
+    to {
+        right: 100%
+    }
+
+}
+
+@keyframes life-animation {
+    from {
+        right: -550px
+    }
+
+    to {
+        right: 100%
+    }
+
+}
+
+@keyframes turtle-animation {
+    from {
+        left: -550px
+    }
+
+    to {
+        left: 100%
+    }
+
+}
